@@ -1,11 +1,10 @@
 Package: gatingMLData
 Type: Package
 Title: Data and XML files for GatingML Test suite
-Version: 1.0.0
+Version: 1.0.1
 Author: Nishant Gopalakrishnan
 Maintainer: Nishant Gopalakrishnan <ngopalak@fhcrc.org>
 Description: Test data & XML files for Testing compliance with the GatingML 1.5 standards in package flowUtils.
 License: GPL
 Depends: R (>= 1.9.0)
 Suggests: flowUtils
-
