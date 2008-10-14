@@ -1,6 +1,6 @@
 Package: gatingMLData
-Type: Data and XML files for GatingML Test suite
-Title: GatingML test files
+Type: Package
+Title: Data and XML files for GatingML Test suite
 Version: 1.0.0
 Author: Nishant Gopalakrishnan
 Maintainer: Nishant Gopalakrishnan <ngopalak@fhcrc.org>
