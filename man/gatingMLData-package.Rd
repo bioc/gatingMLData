@@ -4,13 +4,14 @@
 \docType{package}
 
 \title{
-GatingML test Data and XML files
+Gating-ML test data and XML files
 }
 
 \description{
-Test data files for testing compliance with the
-gating-ML V1.5 candidate recommendataion. The data is
-used by the flowUtils package .
+Test data and XML files for testing compliance of the 
+flowUtils/flowCore packages with Gating-ML (1.5 and 2.0) standards.
+The data is used by the flowUtils package - it is
+required for the testGatingMLCompliance method.
 }
 
 \details{
@@ -24,9 +25,9 @@ LazyLoad: \tab yes\cr
 
 }
 \author{
-Nishant Gopalakrishnan
+J. Spidlen, N. Gopalakrishnan
 
-Maintainer:  Nishant Gopalakrishnan <ngopalak@fhcrc.org>
+Maintainer: J. Spidlen <jspidlen@bccrc.ca>
 }
 
 \keyword{ package }
