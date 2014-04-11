@@ -1,7 +1,7 @@
 Package: gatingMLData
 Type: Package
 Title: Data and XML files for Gating-ML Test suite
-Version: 2.2.1
+Version: 2.4.0
 Author: J. Spidlen, N. Gopalakrishnan
 Maintainer: J. Spidlen <jspidlen@bccrc.ca>
 Description: Test data and XML files for testing compliance of the flowUtils/flowCore packages with Gating-ML (1.5 and 2.0) standards.
