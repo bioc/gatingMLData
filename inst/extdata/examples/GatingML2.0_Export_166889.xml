@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gating:Gating-ML xmlns:gating="http://www.isac-net.org/std/Gating-ML/v2.0/gating" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:transforms="http://www.isac-net.org/std/Gating-ML/v2.0/transformations" xmlns:data-type="http://www.isac-net.org/std/Gating-ML/v2.0/datatypes" xsi:schemaLocation="http://www.isac-net.org/std/Gating-ML/v2.0/gating http://flowcyt.sourceforge.net/gating/2.0/xsd/Gating-ML.v2.0.xsd http://www.isac-net.org/std/Gating-ML/v2.0/transformations http://flowcyt.sourceforge.net/gating/2.0/xsd/Transformations.v2.0.xsd http://www.isac-net.org/std/Gating-ML/v2.0/datatypes http://flowcyt.sourceforge.net/gating/2.0/xsd/DataTypes.v2.0.xsd">
+  <data-type:custom_info>
+    <FlowRepository>
+      <about>Gating-ML 2.0 export of FlowRepository experiment.</about>
+      <experiment_title>Test R Gating-ML interchange</experiment_title>
+      <export_timestamp>2013-12-06T16:37:43.493-08:00</export_timestamp>
+    </FlowRepository>
+  </data-type:custom_info>
+  <transforms:transformation transforms:id="Tr_Arcsinh">
+    <transforms:fasinh transforms:T="176.2801790465702" transforms:M="0.43429448190325176" transforms:A="0.0" />
+  </transforms:transformation>
+  <gating:EllipsoidGate gating:id="Gate_1_UEUtQSBTU0MtQSBFMQ.._UEUtQQ.._U1NDLUE.">
+    <data-type:custom_info>
+      <FlowRepository>
+        <name>PE-A SSC-A E1</name>
+        <id>1</id>
+        <type>Ellipse</type>
+        <compensation_id>-2</compensation_id>
+        <label>
+          <x>-0.1945328446187608</x>
+          <y>32768.875</y>
+        </label>
+        <x_channel_name>PE-A</x_channel_name>
+        <y_channel_name>SSC-A</y_channel_name>
+      </FlowRepository>
+    </data-type:custom_info>
+    <gating:dimension gating:compensation-ref="FCS" gating:transformation-ref="Tr_Arcsinh">
+      <data-type:fcs-dimension data-type:name="PE-A" />
+    </gating:dimension>
+    <gating:dimension gating:compensation-ref="FCS">
+      <data-type:fcs-dimension data-type:name="SSC-A" />
+    </gating:dimension>
+    <gating:mean>
+      <gating:coordinate data-type:value="0.13093575523900436" />
+      <gating:coordinate data-type:value="26112.900390625" />
+    </gating:mean>
+    <gating:covarianceMatrix>
+      <gating:row>
+        <gating:entry data-type:value="1.0941582172399216" />
+        <gating:entry data-type:value="4008.453938328732" />
+      </gating:row>
+      <gating:row>
+        <gating:entry data-type:value="4008.453938328732" />
+        <gating:entry data-type:value="6.198370677161704E8" />
+      </gating:row>
+    </gating:covarianceMatrix>
+    <gating:distanceSquare data-type:value="1.0" />
+  </gating:EllipsoidGate>
+  <gating:BooleanGate gating:id="GateSet_1_UEUtQQ.._U1NDLUE.">
+    <data-type:custom_info>
+      <FlowRepository>
+        <name>PE-A SSC-A E1</name>
+        <id>1</id>
+        <channel_names>
+          <channel index="5" name="PE-A" />
+          <channel index="3" name="SSC-A" />
+        </channel_names>
+      </FlowRepository>
+    </data-type:custom_info>
+    <gating:and>
+      <gating:gateReference gating:ref="Gate_1_UEUtQSBTU0MtQSBFMQ.._UEUtQQ.._U1NDLUE." />
+      <!-- Boolean "and" gates are used to describe FlowRepository's populations (GateSets). Here, we only have one gate defining the population, but Gating-ML requires at least two arguments for the "and" gate. Therefore, we are referencing the same gate twice. -->
+      <gating:gateReference gating:ref="Gate_1_UEUtQSBTU0MtQSBFMQ.._UEUtQQ.._U1NDLUE." />
+    </gating:and>
+  </gating:BooleanGate>
+</gating:Gating-ML>
+
